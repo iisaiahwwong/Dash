@@ -23,4 +23,4 @@ Add your API KEY to `GOOGLE_CLOUD_DEV` row.
 You might need to create your own web server to process the intents from dialogflow.
 The current URI used is based on my domain.
 
-10 stars > Example source code for server.
+## 10 stars > Example source code for server.
