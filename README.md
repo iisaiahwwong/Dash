@@ -15,6 +15,9 @@ This project uses [Firebase](https://console.firebase.google.com) as it's Datast
 - Open the terminal,  run `sh ./INSTALL`.
   - Script resolves boring SSL module imports conflicts in generated files.
 
+## GOOGLE API KEYS
+Once you've obtained your API KEY, rename `Keys.example.plist` to `Keys.plist`.
+Add your API KEY to `GOOGLE_CLOUD_DEV` row.
 
 ## DialogFlow 
 You might need to create your own web server to process the intents from dialogflow.
