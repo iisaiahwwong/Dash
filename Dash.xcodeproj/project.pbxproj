@@ -40,6 +40,7 @@
 		404A297A2020095100542B5C /* VisionAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404A29792020095100542B5C /* VisionAPI.swift */; };
 		404A297C20201ECB00542B5C /* ImageToTextVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404A297B20201ECB00542B5C /* ImageToTextVC.swift */; };
 		40539EA51FFE725F00F42841 /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40539EA41FFE725F00F42841 /* RoundedView.swift */; };
+		405AB81820ED16CE00EE61E4 /* Keys.example.plist in Resources */ = {isa = PBXBuildFile; fileRef = 405AB81720ED16CE00EE61E4 /* Keys.example.plist */; };
 		405B85C01FEBAD4600619E57 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 405B85BF1FEBAD4600619E57 /* AudioToolbox.framework */; };
 		405FFC1C1FEE60FB000436E7 /* CardShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405FFC1B1FEE60FB000436E7 /* CardShadow.swift */; };
 		405FFC1F1FEED192000436E7 /* NLP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405FFC1E1FEED192000436E7 /* NLP.swift */; };
@@ -198,6 +199,7 @@
 		404A29792020095100542B5C /* VisionAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionAPI.swift; sourceTree = "<group>"; };
 		404A297B20201ECB00542B5C /* ImageToTextVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageToTextVC.swift; sourceTree = "<group>"; };
 		40539EA41FFE725F00F42841 /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
+		405AB81720ED16CE00EE61E4 /* Keys.example.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Keys.example.plist; sourceTree = "<group>"; };
 		405B85BE1FEBAD4600619E57 /* Dash.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Dash.entitlements; sourceTree = "<group>"; };
 		405B85BF1FEBAD4600619E57 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		405FFC1B1FEE60FB000436E7 /* CardShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardShadow.swift; sourceTree = "<group>"; };
@@ -705,6 +707,7 @@
 				40F9A4351FA60D2D00660F0B /* ViewController */,
 				40F9A42F1FA5E46900660F0B /* Info.plist */,
 				407D9E5A1FB1E5C1006318EB /* GoogleService-Info.plist */,
+				405AB81720ED16CE00EE61E4 /* Keys.example.plist */,
 			);
 			path = Dash;
 			sourceTree = "<group>";
@@ -916,6 +919,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				405AB81820ED16CE00EE61E4 /* Keys.example.plist in Resources */,
 				40C2852D1FF686C20074E420 /* User.storyboard in Resources */,
 				4011A262200623DC002BBF25 /* CardCell.xib in Resources */,
 				40B089951FB542480019BB9C /* Transcript.storyboard in Resources */,
