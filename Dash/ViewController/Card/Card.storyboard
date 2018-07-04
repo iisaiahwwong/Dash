@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qAI-wz-iDz">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gotham-Bold.otf">
+            <string>Gotham-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Card-->
+        <scene sceneID="6BQ-nh-RUW">
+            <objects>
+                <viewController storyboardIdentifier="Card" id="qAI-wz-iDz" customClass="CardVC" customModule="Dash" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mf5-qp-pcr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cards" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZp-0n-9D1">
+                                <rect key="frame" x="20" y="50" width="120" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="Kx2-CN-ASs"/>
+                                    <constraint firstAttribute="height" constant="40" id="UTx-KI-n6G"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" keyboardDismissMode="interactive" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3FU-V0-cN1">
+                                <rect key="frame" x="0.0" y="185" width="375" height="433"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="zzE-2b-CsZ">
+                                    <size key="itemSize" width="180" height="109"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="WaP-IB-qzl">
+                                        <rect key="frame" x="97.5" y="0.0" width="180" height="109"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="180" height="109"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="e5B-vF-2DK">
+                                        <rect key="frame" x="97.5" y="119" width="180" height="109"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="180" height="109"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <searchBar contentMode="redraw" placeholder="Search" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i7w-Ty-NgI">
+                                <rect key="frame" x="12" y="116" width="351" height="56"/>
+                                <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tZp-0n-9D1" firstAttribute="leading" secondItem="8bO-vK-3ke" secondAttribute="leading" constant="20" id="Bo5-ng-bBc"/>
+                            <constraint firstItem="3FU-V0-cN1" firstAttribute="leading" secondItem="8bO-vK-3ke" secondAttribute="leading" id="EVu-fw-VX9"/>
+                            <constraint firstItem="tZp-0n-9D1" firstAttribute="top" secondItem="8bO-vK-3ke" secondAttribute="top" constant="30" id="H4g-wo-XK6"/>
+                            <constraint firstItem="8bO-vK-3ke" firstAttribute="trailing" secondItem="i7w-Ty-NgI" secondAttribute="trailing" constant="12" id="NaF-9o-dHk"/>
+                            <constraint firstItem="i7w-Ty-NgI" firstAttribute="top" secondItem="tZp-0n-9D1" secondAttribute="bottom" constant="26" id="R4J-yc-K1i"/>
+                            <constraint firstItem="i7w-Ty-NgI" firstAttribute="leading" secondItem="8bO-vK-3ke" secondAttribute="leading" constant="12" id="e4d-pw-9Tb"/>
+                            <constraint firstItem="3FU-V0-cN1" firstAttribute="bottom" secondItem="8bO-vK-3ke" secondAttribute="bottom" id="fEU-00-Ss2"/>
+                            <constraint firstItem="3FU-V0-cN1" firstAttribute="top" secondItem="i7w-Ty-NgI" secondAttribute="bottom" constant="13" id="kTb-hH-pKc"/>
+                            <constraint firstItem="3FU-V0-cN1" firstAttribute="trailing" secondItem="8bO-vK-3ke" secondAttribute="trailing" id="ztl-NL-sgd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8bO-vK-3ke"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Card" image="card_tab" selectedImage="card_tab_sel" id="seI-fh-y3u"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="collectionView" destination="3FU-V0-cN1" id="kZ9-bH-tJN"/>
+                        <outlet property="searchBar" destination="i7w-Ty-NgI" id="QJz-vu-4qw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BCO-vd-2cL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="640.79999999999995" y="-177.66116941529236"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="card_tab" width="29" height="20"/>
+        <image name="card_tab_sel" width="29" height="20"/>
+    </resources>
+</document>

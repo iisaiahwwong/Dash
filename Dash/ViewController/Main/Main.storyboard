@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7Ml-C8-n7W">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gotham-Book.otf">
+            <string>Gotham-Book</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--User-->
+        <scene sceneID="8Gn-6f-ga0">
+            <objects>
+                <viewControllerPlaceholder storyboardName="User" id="Zaq-CD-tOt" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Me" image="user_tab" selectedImage="chat_tab" id="Cq6-zA-5wI"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n2F-vI-7wl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-703" y="201"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Rat-6X-frX">
+            <objects>
+                <viewController id="Mgz-JH-he7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IKO-Mc-qPu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="hbX-8g-Xsm"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" enabled="NO" title="" id="oWE-c3-0UN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gT3-Hd-9VP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-999" y="578"/>
+        </scene>
+        <!--Activity-->
+        <scene sceneID="L08-TJ-TdL">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Activity" id="yDt-H7-wco" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Activity" image="activity_tab" selectedImage="activity_tab" id="UjM-VO-XJT"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vyj-AS-apC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-863" y="201"/>
+        </scene>
+        <!--Main Tab BarVC-->
+        <scene sceneID="1DW-hN-qAX">
+            <objects>
+                <tabBarController storyboardIdentifier="MainTabBar" id="7Ml-C8-n7W" customClass="MainTabBarVC" customModule="Dash" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="Xwp-oP-rGX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.37254901959999998" green="0.4823529412" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="edb-k0-dxg" kind="relationship" relationship="viewControllers" id="Mln-FP-zQa"/>
+                        <segue destination="ABQ-lk-oRN" kind="relationship" relationship="viewControllers" id="HD3-cv-4jZ"/>
+                        <segue destination="Mgz-JH-he7" kind="relationship" relationship="viewControllers" id="k3v-Yy-L7e"/>
+                        <segue destination="yDt-H7-wco" kind="relationship" relationship="viewControllers" id="PIA-gQ-HIz"/>
+                        <segue destination="Zaq-CD-tOt" kind="relationship" relationship="viewControllers" id="4cU-0S-WL0"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c8L-eN-jRO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-999" y="-237"/>
+        </scene>
+        <!--Pop Up ControlsVC-->
+        <scene sceneID="oSl-bR-OvL">
+            <objects>
+                <viewController storyboardIdentifier="PopUpControls" id="nzu-aW-8Mi" customClass="PopUpControlsVC" customModule="Dash" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6fz-ja-7I4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hwi-AA-yZS">
+                                <rect key="frame" x="65" y="392" width="245" height="170"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="HLp-vq-Wpn">
+                                        <rect key="frame" x="87" y="0.0" width="70" height="91"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GZP-QN-8f4" customClass="RoundedButton" customModule="Dash" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="70" id="VxD-oB-q62"/>
+                                                    <constraint firstAttribute="height" constant="70" id="sJJ-Zk-lou"/>
+                                                </constraints>
+                                                <state key="normal" image="dash_pop"/>
+                                                <connections>
+                                                    <action selector="showDashCreate:" destination="nzu-aW-8Mi" eventType="touchUpInside" id="5RB-Ew-hRm"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dash" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rwq-dh-PM6">
+                                                <rect key="frame" x="0.0" y="75" width="70" height="16"/>
+                                                <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="16"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="91" id="HfB-cm-Ina"/>
+                                            <constraint firstAttribute="width" constant="70" id="tld-Zc-xWf"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="R0o-ce-VZy">
+                                        <rect key="frame" x="0.0" y="89" width="60" height="81"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UMx-8b-kyX" customClass="RoundedButton" customModule="Dash" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="Zzb-hY-KvG"/>
+                                                    <constraint firstAttribute="width" constant="60" id="cMf-dq-mgu"/>
+                                                </constraints>
+                                                <state key="normal" image="listen_pop"/>
+                                                <connections>
+                                                    <action selector="showTranscript:" destination="nzu-aW-8Mi" eventType="touchUpInside" id="Ae6-e1-EDf"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Listen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3dT-6p-sdV">
+                                                <rect key="frame" x="0.0" y="65" width="60" height="16"/>
+                                                <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="16"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="E7Y-wl-VyQ">
+                                        <rect key="frame" x="185" y="89" width="60" height="81"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="epB-3K-eWC" customClass="RoundedButton" customModule="Dash" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="J5x-FW-XBf"/>
+                                                    <constraint firstAttribute="height" constant="60" id="mpS-ve-kcJ"/>
+                                                </constraints>
+                                                <state key="normal" image="card_pop"/>
+                                                <connections>
+                                                    <action selector="showCardEdit:" destination="nzu-aW-8Mi" eventType="touchUpInside" id="cJ1-uF-syj"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Card" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TaK-N1-Kal">
+                                                <rect key="frame" x="0.0" y="65" width="60" height="16"/>
+                                                <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="16"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="E7Y-wl-VyQ" secondAttribute="bottom" id="X9M-lg-IgW"/>
+                                    <constraint firstAttribute="bottom" secondItem="R0o-ce-VZy" secondAttribute="bottom" id="cCd-A5-DEX"/>
+                                    <constraint firstAttribute="trailing" secondItem="E7Y-wl-VyQ" secondAttribute="trailing" id="dAs-a9-cfa"/>
+                                    <constraint firstAttribute="height" constant="170" id="dZD-cI-V3a"/>
+                                    <constraint firstItem="HLp-vq-Wpn" firstAttribute="centerX" secondItem="hwi-AA-yZS" secondAttribute="centerX" id="nBF-F4-yO4"/>
+                                    <constraint firstItem="R0o-ce-VZy" firstAttribute="leading" secondItem="hwi-AA-yZS" secondAttribute="leading" id="rdu-n8-Riw"/>
+                                    <constraint firstItem="HLp-vq-Wpn" firstAttribute="top" secondItem="hwi-AA-yZS" secondAttribute="top" id="wzw-Yr-rQl"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="b7e-rJ-gSH" firstAttribute="trailing" secondItem="hwi-AA-yZS" secondAttribute="trailing" constant="65" id="Adt-ML-0GQ"/>
+                            <constraint firstItem="hwi-AA-yZS" firstAttribute="leading" secondItem="b7e-rJ-gSH" secondAttribute="leading" constant="65" id="LKC-gH-YQI"/>
+                            <constraint firstItem="b7e-rJ-gSH" firstAttribute="bottom" secondItem="hwi-AA-yZS" secondAttribute="bottom" constant="105" id="iSA-s9-3Df"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="b7e-rJ-gSH"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KS5-gv-BJm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-144.80000000000001" y="-236.13193403298354"/>
+        </scene>
+        <!--Card-->
+        <scene sceneID="1zK-BS-Ybg">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Card" id="ABQ-lk-oRN" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Card" image="card_tab" selectedImage="card_tab" id="oEk-Ke-HTg"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="piQ-DN-XIG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1158" y="201"/>
+        </scene>
+        <!--Dash-->
+        <scene sceneID="4xv-yg-Hlz">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Dash" id="edb-k0-dxg" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Dash" image="dash_tab" selectedImage="dash_tab" springLoaded="YES" id="fHI-b0-h8g"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aU2-B0-NT5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1313" y="201"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="activity_tab" width="22" height="22"/>
+        <image name="card_pop" width="30" height="20"/>
+        <image name="card_tab" width="29" height="20"/>
+        <image name="chat_tab" width="22" height="21"/>
+        <image name="dash_pop" width="30" height="22"/>
+        <image name="dash_tab" width="24" height="20"/>
+        <image name="listen_pop" width="16" height="27"/>
+        <image name="user_tab" width="25" height="25"/>
+    </resources>
+</document>

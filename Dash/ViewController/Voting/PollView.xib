@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gotham-Bold.otf">
+            <string>Gotham-Bold</string>
+        </array>
+        <array key="Gotham-Book.otf">
+            <string>Gotham-Book</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PollView" customModule="Dash" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="349" height="199"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4CY-kU-G4I" userLabel="VoteCard" customClass="CardView" customModule="Dash" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="349" height="199"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yQ1-uO-H6b">
+                            <rect key="frame" x="265" y="163" width="45" height="29"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="15"/>
+                            <state key="normal" title="Done"/>
+                            <connections>
+                                <action selector="doneBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="7RM-Q5-aGi"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zvy-gN-R6h">
+                            <rect key="frame" x="17" y="163" width="88" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="15"/>
+                            <state key="normal" title="Add Option"/>
+                            <connections>
+                                <action selector="addBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="bII-9X-vDD"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xNW-O5-rUS">
+                            <rect key="frame" x="265" y="164" width="45" height="29"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="15"/>
+                            <state key="normal" title="Vote"/>
+                            <connections>
+                                <action selector="updateVote:" destination="iN0-l3-epB" eventType="touchUpInside" id="5fQ-ln-wDK"/>
+                            </connections>
+                        </button>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="28" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dnC-k1-nDm">
+                            <rect key="frame" x="8" y="48" width="302" height="115"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </tableView>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3JN-aE-ujF">
+                            <rect key="frame" x="327" y="0.0" width="22" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="12"/>
+                            <state key="normal" title="X"/>
+                        </button>
+                        <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KLd-5U-1sw">
+                            <rect key="frame" x="17" y="18" width="302" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham" pointSize="15"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="4CY-kU-G4I" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="6iV-kE-eQw"/>
+                <constraint firstItem="4CY-kU-G4I" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="GTB-m5-taD"/>
+                <constraint firstItem="4CY-kU-G4I" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="bSj-B0-Jrp"/>
+                <constraint firstItem="4CY-kU-G4I" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="x1i-io-veI"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="VoteCardContainer" destination="4CY-kU-G4I" id="Loi-fj-z4r"/>
+                <outlet property="addBtn" destination="zvy-gN-R6h" id="Wde-J0-CxK"/>
+                <outlet property="deleteVoteCardBtn" destination="3JN-aE-ujF" id="pzY-ZL-Scs"/>
+                <outlet property="doneBtn" destination="yQ1-uO-H6b" id="n68-uO-xL0"/>
+                <outlet property="tableView" destination="dnC-k1-nDm" id="VxH-Em-baU"/>
+                <outlet property="titleLabel" destination="KLd-5U-1sw" id="grZ-j6-tfS"/>
+                <outlet property="voteBtn" destination="xNW-O5-rUS" id="ztp-DS-hKM"/>
+            </connections>
+            <point key="canvasLocation" x="-19.5" y="80.5"/>
+        </view>
+    </objects>
+</document>

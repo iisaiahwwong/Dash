@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Gotham Book';
+    src: url('../../Resources/Fonts/Gotham-Book.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#editor {
+    font-family: 'Gotham Book';
+    color: #000;
+}
